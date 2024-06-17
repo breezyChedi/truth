@@ -1,0 +1,461 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fef5e9;
+    
+}
+background-image {
+
+    min-height: 50%;
+}
+/*
+@media screen and (max-width: 600px) {
+    .navbar a, .navbar .dropdown {display: none;}
+    .navbar .icon {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+}*/
+
+p {
+    margin: 0px 0; /* Adjust this value as needed */
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 20px;
+
+
+}
+.navbar a{
+
+    color: black !important;
+    
+    text-align: center !important;
+}
+.navbar {
+    align-items: center;
+    text-align: center;
+    width:70%;
+    display: flex;
+    position:fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    justify-content: space-around;
+    color: black; 
+    text-decoration: none;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+
+    padding: 1.3rem;
+    border-radius: 50px;
+    margin: 1rem;
+    z-index: 1000;
+    
+}
+
+.h2 {
+    color:#ffc091;
+    font-family:sans-serif;
+    font-size: 160px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align:center;
+}
+
+.dropdown a{
+text-align: center;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1;
+    text-decoration: none;
+    color:black
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: black
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+
+    
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+/*
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 600px; 
+    overflow: hidden;
+}
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+*/
+.video-wrapper iframe {
+    position: absolute;
+    top: -100%;
+    left: -10%;
+    width: 120%;
+    height: 300%; /* Adjust height to achieve desired cropping */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+     /* Optional: Add a semi-transparent background to make the text more readable */
+    padding: 20px;
+    z-index: 1; 
+}
+
+.video-overlay h2 {
+    margin: 0;
+    font-size: 4rem;
+    color: #ffc091;
+}
+
+.video-overlay p {
+    margin: 2rem 0 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 0; /* Behind the video and overlay text */
+}
+
+.round-label {
+    margin-top: 0%;
+    position: relative;
+    width: 180px;
+    height: 80px;
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 100%); /* Outline */
+    border-radius: 50px; /* Round corners */
+    overflow: visible;
+}
+
+.label-text {
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.extension {
+    position: absolute;
+    top: 0;
+    color: aqua;
+    left: 100%;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(49, 13, 213, 0.5);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 1s;
+    right: -200px;
+    z-index: 1200;
+}
+
+.extension.open {
+    right: 0;
+    z-index: 1200;
+}
+
+.extension-content {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1200;
+}
+
+
+.main-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    height: 90vh; /* Adjust height as needed */
+    margin: 5vh auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.dimmed-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1; /* Ensure the overlay is on top of the GIF */
+}
+
+.photos-container {
+    flex: 1 1 70%;
+    display: flex;
+    min-width: 30%;
+    max-width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffe1;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.photo {
+    width: 80%;
+    max-height: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    flex: 1 1 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+
+
+.text-container p {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0px; margin-top: 0px; /
+}
+
+.accordion-content {
+    display: none;
+    margin-top: 5px;
+    padding: 5px;
+    border-left: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffc091;
+    
+    opacity: 1;
+
+
+}
+
+
+.content h1 {
+    text-align: center;
+    margin: 0 0 20px 0; /* Ensure spacing below h1 */
+}
+.content p {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.accordion-word + .accordion-content .accordion-word + .accordion-content {
+    background-color:#cfe0e8;
+}
+
+
+.accordion-word {
+    cursor: pointer;
+}
+.accordion-word:hover{
+        display: block;
+    
+}
+
+.content img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 10px; /* Space around the images */
+    border-radius: 10px;
+}
+
+.float-left {
+    float: left; /* Float images to the left */
+    margin-right: 15px; /* Space to the right of the floated image */
+    margin-bottom: 10px; /* Space at the bottom */
+    border-radius: 10px;
+}
+
+.float-right {
+    float: right; /* Float images to the right */
+    margin-left: 15px; /* Space to the left of the floated image */
+    margin-bottom: 10px; /* Space at the bottom */
+    border-radius: 10px;
+}
+
+
+
+.sliding-rectangle {
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 0px; /* Initially position it to the left, completely hidden */
+    width: 70vw; /* Adjust the width as needed */
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    white-space: normal;
+    transform: translateX(-100%); /* Adjust animation duration as needed */
+    animation: slideLeftAnimation 10s forwards infinite; /* Loop the animation indefinitely */
+    z-index: 1;
+    clip-path: inset(0 0 0 -100%);
+
+
+}
+
+@keyframes slideLeftAnimation {
+    0% {
+        transform: translateX(-200vw);
+    }
+    70% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(150%); /* Adjust the final position as needed */
+    }
+}
+
+
+@keyframes slideRightAnimation {
+    0% {
+        transform: translateX(-80vw);
+    }
+    50% {
+        transform: translateX(70vw);
+    }
+    100% {
+        transform: translateX(200vw);
+    }
+}
+
+/* Define the changeText animation */
+/* Define the changeText animation */
+@keyframes changeText {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply the changeText animation to the .changeTextAnimation class */
+.changeTextAnimation {
+    animation: changeText 1s ease forwards;
+}
+
+
+
+
+
+
+.rectangle-content {
+    color: rgb(20, 18, 18);
+    padding: 0px;
+    text-align: center;
+}
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.element {
+    margin-top: 20px; 
+    /* This adds a 20px vertical gap below each element */
+}

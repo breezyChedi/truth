@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><br>About Us - Website with Dropdown Menu</title>
+    <style>
+        a {
+            text-decoration: none;
+            /* Remove underline by default */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .slideshow-container {
+            position: relative;
+
+            width: 80%;
+            max-width: 90vw;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .slideshow-content {
+            align-items: center;
+            position: relative;
+        }
+
+        .slideshow-slide {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .slideshow-slide img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .nav-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .nav-button.left {
+            left: 0;
+        }
+
+        .nav-button.right {
+            right: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script defer src="scripts2.js"></script>
+    <link rel="stylesheet" href="styles3.css"> <!-- Link to your CSS file -->
+    <script defer src="scripts3.js"></script>
+
+    <!--𐤀𐤁𐤂𐤃𐤄𐤃 𐤄 𐤅 𐤆 𐤇 𐤈 𐤉 𐤊 𐤋 𐤌 𐤍 𐤎 𐤏 𐤐 𐤑 𐤒 𐤓 𐤔 𐤕
+        -->
+
+
+</head>
+
+<body>
+
+    <div id="navbar" style="text-align: center;"></div>
+
+    <div style="background-color: #0B0A32;color: white;padding:40px;margin-top:0px;" class="content">
+
+        <div style="width: 100%;height:100px;">
+            <h1 style="margin: 40px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top:80px;">The True Story</h1>
+        </div>
+        <p style="margin-top: 80px;padding-top: 60px;">Western His story begins with the colonisation of "Ancient" Egypt
+            by "Ancient" Greece and subsequent appropriation of their belief systems and concepts. It was proven using
+            statistical methods by the Soviet Mathematician Anatoly Fomenko Jr that they were forging history by
+            duplicating chronologies and applying it to different identities to the extent that it can not be verified
+            that the year is 2024. This was done in an era where power was centralised among the Vatican, Aristocracy,
+            Merchants and bankers, violence became justified if you told a story and violence is profitable. The truths
+            of Europe have become missed-stories which has caused their primitive culture to be the source of the most
+            deadly conflicts in history. European historians claim there were "Dark Ages" lasting centuries,
+            constructing a distinction between Greece and "Ancient" Greece like they then did to Egypt after they
+            colonised it and renamed places, a strategy used through out his story to change the true story. The
+            creation of the Western lens has distorted our ideas of whats true and the effects are clear when looking at
+            the neo-colonial system orchestrated by the multinational merchants, private banks and international
+            organisations that do not serve us. This lens is why Israel is not considered a terroist state. It is why
+            the world is expected to care about Ukraines conflict but remain silent on the violence in Congo and Sudan
+            that Israel and many nations profit from. It is obvious who controls the narrative and theyve been
+            controlling it for a long time. Yet their oldest stories took place in Africa, before our story became oral
+            his story and the hero glyphs became heiroglyphs. </p>
+        <div class="map-container">
+            <img src="africa2.jpg" id="map" alt="Custom Map">
+
+            <!-- Markers -->
+            <div class="marker" data-slide-index="0" style="top: 1%; left: 45%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="1" style="top: 10%; left: 45%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="2" style="top: 25%; left: 45%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="3" style="top: 35%; left: 39%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="4" style="top: 40%; left: 31%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="5" style="top: 40%; left: 50%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="6" style="top: 45%; left: 60%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="7" style="top: 33%; left: 60%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="8" style="top: 50%; left: 40%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="9" style="top: 55%; left: 46%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="10" style="top: 50%; left: 68%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="11" style="top: 55%; left: 80%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="12" style="top: 60%; left: 85%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="13" style="top: 77%; left: 80%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="14" style="top: 87%; left: 85%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="15" style="top: 80%; left: 70%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="16" style="top: 70%; left: 40%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="17" style="top: 60%; left: 39%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="18" style="top: 60%; left: 46%;color: aqua;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="19" style="top: 55%; left: 32%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="20" style="top: 55%; left: 23%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="21" style="top: 63%; left: 28%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="22" style="top: 80%; left: 25%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="23" style="top: 84%; left: 48%;">&#x1F6A9;</div>
+            <div class="marker" data-slide-index="24" style="top: 55%; left: 60%;">&#x1F6A9;</div>
+        </div>
+    </div>
+
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="1-ngoni.png" alt="Slide 1">
+            <h2 id="slide-label">vjgv</h2>
+            <p id="slide-description">ngoni,goni, circumcision, naletale/umtali, umqhele, crown, vocab? maseru mizraim,
+                amahlubi Musi Musi 1525–1550, </p>
+        </div>
+        <div class="slide">
+            <img src="zim-2.avif" alt="Slide 2">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">great zimbabwe, dry stone masonry, bakalanga/ranga, tau-rat torwa(taurat) dynast
+                butwa, solomons gold, musikavanhu, lemba,</p>
+        </div>
+        <div class="slide">
+            <img src="3-bemba.jpg" alt="Slide 3">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">3.shubi embo, chitmukhulu, ntare ,bemba deserts and camels-related kikuyu kongo,
+                luba, chira=hil
+                chitapankwa
+            </p>
+        </div>
+        <div class="slide">
+            <img src="3-rwanda.jpg" alt="Slide 4">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">rwanda egyptian royalty, shubi embo, chitmukhulu, ntare, batare, kitara chwezi,
+                bemba deserts and camels-related kikuyu kongo, luba, chira=hil
+                chitapankwa </p>
+        </div>
+        <div class="slide">
+            <img src="4-kilimanjaro.jpg" alt="Slide 5">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">hor, mt kenya, kilimanjaro, njeru=sinai=shine. bakushi, kikuyu oral history,
+                persian/arab expansion mulungu, israel uganda, misri legend, masiro tombs uganda
+            </p>
+        </div>
+        <div class="slide">
+            <img src="terra-small.jpg" alt="Slide 6">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">5.judeo terra, sambation zambita, seleka djotodia, bangui archaeology
+            </p>
+        </div>
+        <div class="slide">
+            <img src="9-bamileke.JPG" alt="Slide 7">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">6. golf de juda, eri confirmed by fake jews, bamileke, euro lit, chukwuma,
+                ndjamenna diy gid biy, fulani expansion, bamileke fleeing, damasake, lake gilead
+            </p>
+        </div>
+        <div class="slide">
+            <img src="6-loango.webp" alt="Slide 8">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">loango kong, angolan jewso</p>
+        </div>
+        <div class="slide">
+            <img src="7-shilluk.jpg" alt="Slide 9">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">7. shilluk shiloh, duwadh, Nyikang</p>
+        </div>
+        <div class="slide">
+            <img src="8-Darfur.jpg" alt="Slide 10">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">8. Daju kingdom salih, dhu al qarnays, torwa dynasty, christian nubia, dry stone,
+                al quds, sahel</p>
+        </div>
+        <div class="slide">
+            <img src="oba.jpg" alt="Slide 11">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">golf de juda, eri confirmed by fake jews, hausa esau, Daura</p>
+        </div>
+        <div class="slide">
+            <img src="mansa-rs.jpg" alt="Slide 12">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description"> whydah, juda, mossi kingdoms maure, wagadou->eri</p>
+        </div>
+        <div class="slide">
+            <img src="11-tchitt.webp" alt="Slide 13">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">songhai, jatta, soundiate, saloum sine marabouts, djenno djeno dhar tchitt othe
+                tinbuktu, jews bilad al sudan, haratin blakjew metal workers</p>
+        </div>
+        <div class="slide">
+            <img src="12-moors.jpg" alt="Slide 14">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">
+                12. murrakush, mauretania, almoravid "berber" deception, haratin
+
+            </p>
+        </div>
+        <div class="slide">
+            <img src="13-jews.jpg" alt="Slide 15">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">13. moorish jews, sardiia flag</p>
+        </div>
+        <div class="slide">
+            <img src="14-kahina.jpg" alt="Slide 16">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">14. al kahina, jewish presence</p>
+        </div>
+        <div class="slide">
+            <img src="15-maseru.jpg" alt="Slide 17">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">15. maseru, deshret, red land , border, seth vs horus montu, black land vs red
+                land,
+            </p>
+        </div>
+        <div class="slide">
+            <img src="17-ram.jpg" alt="Slide 18">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">16. kushamun karnak, tirhaqah cityo f the sun, amanirena, kush beyond rivers pf
+                kush
+
+            </p>
+        </div>
+        <div class="slide">
+            <img src="sudd.jpg" alt="Slide 19">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">Lake Ptolemy / Red Sea / Sea of Reeds
+
+            </p>
+        </div>
+        <div class="slide">
+            <img src="lalibela.jpg" alt="Slide 20">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">17. butana, ethiopian jews, yeha, sheba, dm't, greek port name
+
+
+
+            </p>
+        </div>
+        <div class="slide">
+            <img src="18-yemen.jpg" alt="Slide 21">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">18. saba, himyarite kingdom karibu vs mohammed
+
+            </p>
+        </div>
+        <div class="slide">
+            <img src="19-mecca.webp" alt="Slide 22">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">19. kaaba, used to pray to jerusalen, proximity to africa, perflect place to brainwah
+
+
+            </p>
+        </div>
+        <div class="slide">
+            <img src="20-assyria.png" alt="Slide 23">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">
+                20. abiru,kabiru, babylon apep, papal
+            </p>
+        </div>
+        <div class="slide">
+            <img src="greek.jpg" alt="Slide 23">
+            <h2 id="slide-label"></h2>
+            <p id="slide-description">
+                Greek Mythology
+            </p>
+        </div>
+        
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        // Hide existing content
+                        console.log("op")
+                        document.querySelectorAll('.accordion-word').forEach(content => {
+                            content.classList.remove('open');
+                        });
+
+                        // Show target content
+                        targetElement.setAttribute('class', 'accordion-word open');
+                    }
+                });
+            });
+        });
+        const slides = [
+            {
+                image: 'newMap.png',
+                label: 'Label 1',
+                description: 'Description for Item 1.'
+            },
+            {
+                image: 'path/to/image2.jpg',
+                label: 'Label 2',
+                description: 'Description for Item 2.'
+            },
+            {
+                image: 'path/to/image3.jpg',
+                label: 'Label 3',
+                description: 'Description for Item 3.'
+            }
+        ];
+
+        let currentSlideIndex = 0;
+
+        function showSlide(index) {
+            const slide = slides[index];
+            document.getElementById('slide-image').src = slide.image;
+            document.getElementById('slide-label').textContent = slide.label;
+            document.getElementById('slide-description').textContent = slide.description;
+        }
+
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+            showSlide(currentSlideIndex);
+        }
+
+        function previousSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+            showSlide(currentSlideIndex);
+        }
+
+        // Initially display the first slide
+        showSlide(currentSlideIndex);
+    </script>
+</body>
+
+</html>

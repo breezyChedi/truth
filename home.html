@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Website with Dropdown Menu</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script defer src="scripts.js"></script>
+    <style>
+          .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Adjust the height as needed */
+        min-height: 50vh; 
+        overflow: hidden;
+    }
+
+    .video-wrapper {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .background-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+   
+
+    </style>
+</head>
+
+<body>
+    <div id="navbar" style="text-align: center;"></div>
+
+
+
+
+
+    <!--src="https://www.youtube.com/embed/CHrHgnRswhM?controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3" -->
+    <div class="video-container">
+        <div class="video-wrapper">
+            <!--
+            <iframe
+                src="https://www.youtube.com/embed/CHrHgnRswhM?start=8&autoplay=1&loop=1&playlist=CHrHgnRswhM&t=20&mute=1&playsinline=1&controls=0&showinfo=0&autohide=1&allowfullscreen=true&mode=transparent"
+                frameborder="0"
+                allow="autoplay;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                playsinline
+                allowfullscreen>
+            </iframe>
+            -->
+            <img src="openbookcrop.gif" class="background-image" alt="Background GIF" style="background-color: rgba(0, 0, 0, 0.7);height: 100vh;">
+            <div class="dimmed-overlay"></div>
+            <div class="video-overlay" >
+                <div class="overlay-content" >
+                    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;text-align: left;">Revealing Truth
+                    </h2>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;padding: 20pt;" >Dive into the untold stories of
+                        history, shattered illusions of imperialism, and hidden truths of colonization.</p>
+                        <br>
+                    <div class="round-label">
+                        
+                        <div class="label-text">Did you know?</div>
+                        <div class="sliding-rectangle" id="slidingRectangle">
+                            <div class="rectangle-content" id="rectangleContent">Israel is not real</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="content">
+        <h1>Truth will prevail</h1>
+        <p>This is the home page. The design features rounded corners for a modern look.</p>
+
+
+        
+    </div>
+-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('http://localhost:8000/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
+
+</body>
+</html>

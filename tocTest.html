@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion TOC Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .toc {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 15px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        transition: background-color 0.4s ease;
+    }
+    
+    .accordion:hover,
+    .accordion.active {
+        background-color: #ccc;
+    }
+    
+    .panel {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 18px;
+        background-color: white;
+        transition: max-height 0.2s ease-out;
+    }
+    
+    .panel p {
+        padding: 15px 0;
+    }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var acc = document.getElementsByClassName("accordion");
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+});
+
+
+    </script>
+</head>
+<body>
+    <div class="toc">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Content for Section 1...</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Content for Section 2...</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Content for Section 3...</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

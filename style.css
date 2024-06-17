@@ -1,0 +1,19 @@
+.word{
+    color: blue;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.etymology {
+display: none;
+margin-top: 5px;
+font-size: 0.9em;
+color: gray;
+
+}
+
+.etymology.active{
+    display: block;
+    
+}

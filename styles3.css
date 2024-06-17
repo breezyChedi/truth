@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+#map {
+    width: 100%;
+    display: block;
+}
+
+.marker {
+    position: absolute;
+    cursor: pointer;
+    
+    font-size: 3vw;
+    
+    color: red;
+    z-index: 10;  /* Ensure markers are on top of other elements */
+    transition: transform 0.3s, outline 0.3s;
+}
+
+
+.selected {
+    transform: scale(1.5);
+    outline: 1px solid yellow;
+    border-radius: 50%;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slide {
+    display: none; /* Initially hide all slides */
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}

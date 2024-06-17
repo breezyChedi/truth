@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map with Slideshow</title>
+    <link rel="stylesheet" href="styles3.css">
+    <script src="scripts3.js"></script>
+</head>
+
+<body>
+    <div class="map-container">
+        <img src="africa2.jpg" id="map" alt="Custom Map">
+
+        <!-- Markers -->
+        <div class="marker" data-slide-index="0" style="top: 20%; left: 30%;">&#x1F6A9;</div>
+        <div class="marker" data-slide-index="1" style="top: 40%; left: 50%;">&#x1F6A9;</div>
+        <div class="marker" data-slide-index="2" style="top: 60%; left: 70%;">&#x1F6A9;</div>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="taharqa.jpg" alt="Slide 1">
+            <h2 id="slide-label">vjgv</h2>
+                <p id="slide-description">vj hk</p>
+        </div>
+        <div class="slide">
+            <img src="tanta-rs.jpg" alt="Slide 2">
+            <h2 id="slide-label"></h2>
+                <p id="slide-description"></p>
+        </div>
+        <div class="slide">
+            <img src="horn2.png" alt="Slide 3">
+            <h2 id="slide-label"></h2>
+                <p id="slide-description"></p>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Website with Dropdown Menu</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+
+    <script defer src="scripts2.js"></script>
+    <style>
+        .content-item {
+            display: flex;
+            padding: 1rem;
+            background-color: #fff;
+            margin: 1rem;
+            border-radius: 10px;
+          /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+            overflow: hidden;
+            align-items: center; /* Center align items vertically */
+        }
+        
+        .photo {
+            flex: 1 1 30%; /* Allow the photo to take up to 30% of the container's width */
+            max-width: 200px; /* Optional: Set a maximum width for the photo */
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .text {
+            flex: 1 1 70%; /* Allow the text to take up the remaining 70% of the container's width */
+            padding-left: 1rem; /* Add some spacing between the photo and the text */
+        }
+
+        .text h2, .text h1 {
+            margin-top: 0;
+        }
+
+        @media (max-width: 768px) {
+            .content-item {
+                flex-direction: column;
+                align-items: center;
+            }
+            .text {
+                padding-left: 0; /* Remove left padding on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar" style="text-align: center;"></div>
+    <div style="background-color: #10746c; color: white; padding: 100px;" class="content">
+        <div style="width: 100%; height: 30px;">
+            <h1>Main Menu</h1>
+        </div>
+    </div>
+
+    <div class="content-item">
+        <div class="photo">
+            <img src="leo-afr.jpg" alt="Photo 1">
+        </div>
+        <div class="text">
+            <a href="service1.html"><h1>Who is Amen</h1></a> 
+            <p>This is the services page. Find out what we offer here.</p>
+        </div>
+    </div>
+
+    <div class="content-item">
+       
+        <div class="text">
+            <h1>Where's the Promised Land</h1>
+            <p>This is the services page. Find out what we offer here.</p>
+        </div> 
+        <div class="photo">
+            <img src="photo3.jpg" alt="Photo 2">
+        </div>
+    </div>
+
+    <div class="content-item">
+        <div class="photo">
+            <img src="photo3.jpg" alt="Photo 3">
+        </div>
+        <div class="text">
+            <h1>How the Jewish Identity was Whitewashed</h1>
+            <p>This is the services page. Find out what we offer here.</p>
+        </div>
+        
+    </div>
+
+    <div class="content-item">
+ 
+        <div class="text">
+            <h1>Hebrew is a Bantu Language</h1>
+            <p>This is the services page. Find out what we offer here.</p>
+        </div>
+
+        <div class="photo">
+            <img src="photo3.jpg" alt="Photo 4">
+        </div>       
+    </div>
+
+    <div class="content-item">
+        <div class="photo">
+            <img src="photo3.jpg" alt="Photo 5">
+        </div>
+        <div class="text">
+            <h1>White Man Sources</h1>
+            <p>This is the services page. Find out what we offer here.</p>
+        </div>
+    </div>
+
+    <div class="content-item">
+
+        <div class="text">
+            <h1>Strategy of the Enemy</h1>
+            <p>This is the services page. Find out what we offer here.</p>
+        </div>
+        <div class="photo">
+            <img src="photo3.jpg" alt="Photo 6">
+        </div>
+
+    </div>
+
+    <div class="content-item">
+        <div class="photo">
+            <img src="photo3.jpg" alt="Photo 7">
+        </div>
+        <div class="text">
+            <h1>History of the Alphabet</h1>
+            <p>This is the services page. Find out what we offer here.</p>
+        </div>
+    </div>
+
+    <div class="content-item">
+        
+        <div class="text">
+            <h1>History of the Alphabet</h1>
+            <p>This is the services page. Find out what we offer here.</p>
+        </div>
+<div class="photo">
+            <img src="photo3.jpg" alt="Photo 8">
+        </div>
+
+    </div>
+</body>
+</html>

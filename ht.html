@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <div class="dropdown">
+        <a href="#services">Services</a>
+        <div class="dropdown-content">
+            <a href="#service1">Service 1</a>
+            <a href="#service2">Service 2</a>
+            <a href="#service3">Service 3</a>
+        </div>
+    </div>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="content">
+    <h1>Welcome to Our Website</h1>
+    <p>This is a simple website with a navbar that has a dropdown menu. The design features rounded corners for a modern look.</p>
+</div>
+
+</body>
+</html>
